@@ -10,7 +10,7 @@ webdriver = webdriver.Chrome()
 
 
 # adding zip codes
-for i in range(20602,20607,1):
+for i in range(20602,21931,1):
     webdriver.get('https://www.dllr.state.md.us/cgi-bin/ElectronicLicensing/OP_Search/OP_search.cgi?calling_app=HIC::HIC_business_location')
     time.sleep(1)
     zip_input=webdriver.find_element(By.NAME,value='zip')
